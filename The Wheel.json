@@ -1,0 +1,185 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheWheel",
+				"abbreviation": "WHEEL",
+				"full": "The Wheel",
+				"version": "1.0.0",
+				"authors": [
+					"Autonomous Ace"
+				],
+				"color": "3d0785",
+				"colorNight": "b888f9"
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Young Frost Tunneller",
+			"source": "TheWheel",
+			"referenceSources": [
+				"BGDIA",
+				"BMT",
+				"CM",
+				"CoA",
+				"CoS",
+				"EGW",
+				"HFStCM",
+				"IMR",
+				"KftGV",
+				"MOT",
+				"OoW",
+				"PotA",
+				"PSI",
+				"SatO",
+				"SKT",
+				"SLW",
+				"TftYP",
+				"WDH",
+				"WDMM"
+			],
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 14,
+			"int": 6,
+			"wis": 13,
+			"cha": 6,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"tremorsense 60 ft."
+			],
+			"passive": 13,
+			"immune": [],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The tunneler has advantage on an attack roll against a creature if at least one of the tunneller's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Tunneller",
+					"entries": [
+						"The tunneller can burrow through solid rock at half its burrowing speed and can leave a 5-foot-diameter tunnel in its wake"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 3 ({@damage 1d6}) cold damage."
+					]
+				},
+				{
+					"name": "Ice Breath {@recharge 6}",
+					"entries": [
+						"The tunneller exhales icy shards in a 15-foot cone. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 7 ({@damage 2d6}) piercing damage and 7 ({@damage 2d6}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"mountain",
+				"underdark"
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Monstrous, fire-breathing fiends that take the form of powerful dogs, hell hounds are found on the battlefields of Acheron and throughout the Lower Planes. On the Material Plane, hell hounds are most commonly seen in service to devils, fire giants, and other evil creatures that use them as guard animals and companions.",
+									{
+										"name": "Burning Hunger",
+										"type": "entries",
+										"entries": [
+											"Hell hounds hunt in packs, feeding on any creature that appears edible. They avoid potentially dangerous foes in favor of targeting the weakest prey with their savage bite and fiery breath, demonstrating a relentless determination as they pursue that prey to the bitter end.",
+											"When hell hounds feed, the flesh they consume stokes the infernal fires that burn within them. When a hell hound dies, that fire consumes the creature's remains in a billowing eruption of smoke and blazing embers, leaving nothing behind but scorched tufts of black fur."
+										]
+									},
+									{
+										"name": "Evil to the Core",
+										"type": "entries",
+										"entries": [
+											"Hell hounds are smarter than mundane beasts, and their lawful nature makes them good at following orders. However, a hell hound's evil disposition means that the creature can't be trained to be anything other than a ruthless killer. If a hell hound isn't allowed to indulge its malevolent hunger, it quickly abandons or turns against its master."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://www.superherotoystore.com/cdn/shop/articles/SHIMO_2000x.progressive.jpg?v=1710936762"
+						}
+					}
+				]
+			},
+			"resist": [
+				"cold"
+			],
+			"shortName": "tunneller",
+			"tokenHref": {
+				"type": "internal",
+				"path": ""
+			},
+			"damageTags": [
+				"C",
+				"P"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		}
+	]
+}
