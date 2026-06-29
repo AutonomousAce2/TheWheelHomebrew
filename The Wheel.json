@@ -1,4 +1,5 @@
 {
+	"siteVersion": "1.217.7",
 	"_meta": {
 		"sources": [
 			{
@@ -10,13 +11,174 @@
 					"Autonomous Ace"
 				],
 				"color": "3d0785",
-				"colorNight": "b888f9"
+				"colorNight": "b888f9",
+				"edition": "classic"
 			}
-		]
+		],
+		"dateAdded": 1782759673,
+		"dateLastModified": 1782759673,
+		"edition": "classic"
 	},
 	"monster": [
 		{
+			"name": "Tunneler",
+			"source": "TheWheel",
+			"page": 105,
+			"referenceSources": [
+				"QftIS"
+			],
+			"size": [
+				"S"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 36,
+				"formula": "8d6 + 8"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 20
+			},
+			"str": 14,
+			"dex": 13,
+			"con": 12,
+			"int": 3,
+			"wis": 12,
+			"cha": 6,
+			"save": {
+				"str": "+4",
+				"con": "+3"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"conditionImmune": [
+				"petrified"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Mutated Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Due to the confluence of necromantic magic and exposure to the waters of an Emergence Pool, Tunneler has gained the ability to channel magic. His spellcasting modifier is Wisdom (spell save {@dc 11}) and he can innately cast the following spells, requiring no components:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell bane}",
+								"{@spell false life}"
+							],
+							"slots": 2,
+							"lower": 1
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"name": "Tunneler",
+					"entries": [
+						"The aurumvorax can burrow through solid rock and metal at half its burrowing speed and leaves a 5-foot-diameter tunnel in its wake."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The aurumvorax makes one Bite attack and two Claw attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. If the target is a creature wearing armor of any type, the aurumvorax regains 4 ({@dice 1d6 + 1}) hit points."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage. If the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 12}). Until this grapple ends, the aurumvorax can't use its Claw attack on another target, and when it moves, it can drag the {@condition grappled} creature with it, without the aurumvorax's speed being halved."
+					]
+				}
+			],
+			"token": {
+				"name": "Aurumvorax",
+				"source": "JttRC"
+			},
+			"traitTags": [
+				"Tunneler"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"savingThrowForcedSpell": [
+				"charisma"
+			],
+			"hasFluff": true,
+			"fluff": {
+				"name": "Aurumvorax",
+				"source": "JttRC",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Early in life, aurumvoraxes cooperate with siblings and their den leader parents, digging tunnels in search of metal and other burrowing prey. As they grow to adulthood, aurumvoraxes hunt on their own, carving out territories they viciously defend."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Aurumvorax",
+								"entries": [
+									"An aurumvorax is an eight-legged, badger-like hunter. These aggressive omnivores attack any prey they think they can best, ambushing even creatures double their size. They supplement their diets with metal, whether it's worked or ore, and they have a particular taste for gold. This diet lends aurumvorax fur its golden sheen.",
+									"Alone or in small groups, aurumvoraxes dig deep in search of precious metals. Such exploration often leads them into conflict with subterranean settlements. As defenders of such communities often wear metal armor, aurumvoraxes prioritize attacking armored foes—whether that armor is metal or not."
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
 			"name": "Young Frost Tunneller",
+			"shortName": "tunneller",
 			"source": "TheWheel",
 			"referenceSources": [
 				"BGDIA",
@@ -75,6 +237,9 @@
 				"tremorsense 60 ft."
 			],
 			"passive": 13,
+			"resist": [
+				"cold"
+			],
 			"immune": [],
 			"cr": "3",
 			"trait": [
@@ -110,6 +275,10 @@
 				"mountain",
 				"underdark"
 			],
+			"tokenHref": {
+				"type": "internal",
+				"path": ""
+			},
 			"traitTags": [
 				"Keen Senses",
 				"Pack Tactics"
@@ -120,9 +289,16 @@
 			"actionTags": [
 				"Breath Weapon"
 			],
+			"damageTags": [
+				"C",
+				"P"
+			],
 			"miscTags": [
-				"MW",
-				"AOE"
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
@@ -134,22 +310,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Monstrous, fire-breathing fiends that take the form of powerful dogs, hell hounds are found on the battlefields of Acheron and throughout the Lower Planes. On the Material Plane, hell hounds are most commonly seen in service to devils, fire giants, and other evil creatures that use them as guard animals and companions.",
-									{
-										"name": "Burning Hunger",
-										"type": "entries",
-										"entries": [
-											"Hell hounds hunt in packs, feeding on any creature that appears edible. They avoid potentially dangerous foes in favor of targeting the weakest prey with their savage bite and fiery breath, demonstrating a relentless determination as they pursue that prey to the bitter end.",
-											"When hell hounds feed, the flesh they consume stokes the infernal fires that burn within them. When a hell hound dies, that fire consumes the creature's remains in a billowing eruption of smoke and blazing embers, leaving nothing behind but scorched tufts of black fur."
-										]
-									},
-									{
-										"name": "Evil to the Core",
-										"type": "entries",
-										"entries": [
-											"Hell hounds are smarter than mundane beasts, and their lawful nature makes them good at following orders. However, a hell hound's evil disposition means that the creature can't be trained to be anything other than a ruthless killer. If a hell hound isn't allowed to indulge its malevolent hunger, it quickly abandons or turns against its master."
-										]
-									}
+									"While adults of the species can grow to gargantuan sizes, this juvenile is roughly the size of a horse. Its scaly hide is pale white, and sprouting from its back are several blue crystals of ice. Frost Tunnellers are lone creatures, and thus the juveniles are often found without parental supervision. Instead, they often take up the position of pack leader, lording over other, smaller creatures, using their tunnelling abilities to create an underground nest for themselves and their pack."
 								]
 							}
 						]
@@ -164,22 +325,7 @@
 						}
 					}
 				]
-			},
-			"resist": [
-				"cold"
-			],
-			"shortName": "tunneller",
-			"tokenHref": {
-				"type": "internal",
-				"path": ""
-			},
-			"damageTags": [
-				"C",
-				"P"
-			],
-			"savingThrowForced": [
-				"dexterity"
-			]
+			}
 		}
 	]
 }
