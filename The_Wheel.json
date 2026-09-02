@@ -1,0 +1,481 @@
+{
+	"siteVersion": "1.218.3",
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheWheel",
+				"abbreviation": "WHEEL",
+				"full": "The Wheel",
+				"version": "1.0.0",
+				"authors": [
+					"Autonomous Ace"
+				],
+				"color": "3d0785",
+				"colorNight": "b888f9",
+				"edition": "classic"
+			}
+		],
+		"dateAdded": 1788349384,
+		"dateLastModified": 1788349384,
+		"edition": "classic"
+	},
+	"monster": [
+		{
+			"name": "Quorum Assassin",
+			"shortName": "Assassin",
+			"source": "TheWheel",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 12,
+			"wis": 10,
+			"cha": 14,
+			"save": {
+				"dex": "+5",
+				"cha": "+4"
+			},
+			"skill": {
+				"athletics": "+3",
+				"deception": "+6",
+				"sleight of hand": "+5",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Common",
+				"Thieves' cant"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Assassinate",
+					"entries": [
+						"During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a {@status surprised} creature is a critical hit."
+					]
+				},
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Once per turn, the assassin deals an extra 10 ({@damage 3d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't {@condition incapacitated} and the assassin doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The assassin makes two dagger attacks."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage plus 7 ({@damage 2d6}) poison damage, and the target can't take reactions until the start of their next turn."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"The assassin takes the Dash, Disengage, or Hide action."
+					]
+				},
+				{
+					"name": "Smoke Bomb (2/Day)",
+					"entries": [
+						"The assassin deploys a small smoke bomb, creating a 5-foot-radius sphere of smoke centred on a point within 10 feet. The area of this smoke cloud is {@quickref Vision and Light|PHB|2||heavily obscured}. The smoke dissipates at the start of the assassin's next turn."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"TC"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Trained from birth, these Quorum agents deal in death, rather than diplomacy. Whenever the Quorum has a problem that cannot be solved any other way, they dispatch one of these assassins, with strict instructions to escape custody if caught and slay those responsible for their capture. However, if attempting to fulfil this goal means certain death, they will flee, and live to serve the Quorum another day."
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Tunneler",
+			"source": "TheWheel",
+			"page": 105,
+			"referenceSources": [
+				"QftIS"
+			],
+			"size": [
+				"S"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 36,
+				"formula": "8d6 + 8"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 20
+			},
+			"str": 14,
+			"dex": 13,
+			"con": 12,
+			"int": 3,
+			"wis": 12,
+			"cha": 6,
+			"save": {
+				"str": "+4",
+				"con": "+3"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"conditionImmune": [
+				"petrified"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Mutated Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Due to the confluence of necromantic magic and exposure to the waters of an Emergence Pool, Tunneler has gained the ability to channel magic. His spellcasting modifier is Wisdom (spell save {@dc 11}) and he can innately cast the following spells, requiring no components:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell bane}",
+								"{@spell false life}"
+							],
+							"slots": 2,
+							"lower": 1
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"name": "Tunneler",
+					"entries": [
+						"The aurumvorax can burrow through solid rock and metal at half its burrowing speed and leaves a 5-foot-diameter tunnel in its wake."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The aurumvorax makes one Bite attack and two Claw attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. If the target is a creature wearing armor of any type, the aurumvorax regains 4 ({@dice 1d6 + 1}) hit points."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage. If the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 12}). Until this grapple ends, the aurumvorax can't use its Claw attack on another target, and when it moves, it can drag the {@condition grappled} creature with it, without the aurumvorax's speed being halved."
+					]
+				}
+			],
+			"token": {
+				"name": "Aurumvorax",
+				"source": "JttRC"
+			},
+			"traitTags": [
+				"Tunneler"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"savingThrowForcedSpell": [
+				"charisma"
+			],
+			"hasFluff": true,
+			"fluff": {
+				"name": "Aurumvorax",
+				"source": "JttRC",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Early in life, aurumvoraxes cooperate with siblings and their den leader parents, digging tunnels in search of metal and other burrowing prey. As they grow to adulthood, aurumvoraxes hunt on their own, carving out territories they viciously defend."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Aurumvorax",
+								"entries": [
+									"An aurumvorax is an eight-legged, badger-like hunter. These aggressive omnivores attack any prey they think they can best, ambushing even creatures double their size. They supplement their diets with metal, whether it's worked or ore, and they have a particular taste for gold. This diet lends aurumvorax fur its golden sheen.",
+									"Alone or in small groups, aurumvoraxes dig deep in search of precious metals. Such exploration often leads them into conflict with subterranean settlements. As defenders of such communities often wear metal armor, aurumvoraxes prioritize attacking armored foes—whether that armor is metal or not."
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Young Frost Tunneller",
+			"shortName": "tunneller",
+			"source": "TheWheel",
+			"referenceSources": [
+				"BGDIA",
+				"BMT",
+				"CM",
+				"CoA",
+				"CoS",
+				"EGW",
+				"HFStCM",
+				"IMR",
+				"KftGV",
+				"MOT",
+				"OoW",
+				"PotA",
+				"PSI",
+				"SatO",
+				"SKT",
+				"SLW",
+				"TftYP",
+				"WDH",
+				"WDMM"
+			],
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 14,
+			"int": 6,
+			"wis": 13,
+			"cha": 6,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"tremorsense 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"cold"
+			],
+			"immune": [],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The tunneler has advantage on an attack roll against a creature if at least one of the tunneller's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Tunneller",
+					"entries": [
+						"The tunneller can burrow through solid rock at half its burrowing speed and can leave a 5-foot-diameter tunnel in its wake"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 3 ({@damage 1d6}) cold damage."
+					]
+				},
+				{
+					"name": "Ice Breath {@recharge 6}",
+					"entries": [
+						"The tunneller exhales icy shards in a 15-foot cone. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 7 ({@damage 2d6}) piercing damage and 7 ({@damage 2d6}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"mountain",
+				"underdark"
+			],
+			"tokenHref": {
+				"type": "internal",
+				"path": ""
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"damageTags": [
+				"C",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"While adults of the species can grow to gargantuan sizes, this juvenile is roughly the size of a horse. Its scaly hide is pale white, and sprouting from its back are several blue crystals of ice. Frost Tunnellers are lone creatures, and thus the juveniles are often found without parental supervision. Instead, they often take up the position of pack leader, lording over other, smaller creatures, using their tunnelling abilities to create an underground nest for themselves and their pack."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://www.superherotoystore.com/cdn/shop/articles/SHIMO_2000x.progressive.jpg?v=1710936762"
+						}
+					}
+				]
+			}
+		}
+	]
+}
