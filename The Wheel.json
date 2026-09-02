@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.217.7",
+	"siteVersion": "1.218.3",
 	"_meta": {
 		"sources": [
 			{
@@ -15,11 +15,161 @@
 				"edition": "classic"
 			}
 		],
-		"dateAdded": 1782759673,
-		"dateLastModified": 1782759673,
+		"dateAdded": 1788349384,
+		"dateLastModified": 1788349384,
 		"edition": "classic"
 	},
 	"monster": [
+		{
+			"name": "Quorum Assassin",
+			"shortName": "Assassin",
+			"source": "TheWheel",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 12,
+			"wis": 10,
+			"cha": 14,
+			"save": {
+				"dex": "+5",
+				"cha": "+4"
+			},
+			"skill": {
+				"athletics": "+3",
+				"deception": "+6",
+				"sleight of hand": "+5",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Common",
+				"Thieves' cant"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Assassinate",
+					"entries": [
+						"During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a {@status surprised} creature is a critical hit."
+					]
+				},
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Once per turn, the assassin deals an extra 10 ({@damage 3d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't {@condition incapacitated} and the assassin doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The assassin makes two dagger attacks."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage plus 7 ({@damage 2d6}) poison damage, and the target can't take reactions until the start of their next turn."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"The assassin takes the Dash, Disengage, or Hide action."
+					]
+				},
+				{
+					"name": "Smoke Bomb (2/Day)",
+					"entries": [
+						"The assassin deploys a small smoke bomb, creating a 5-foot-radius sphere of smoke centred on a point within 10 feet. The area of this smoke cloud is {@quickref Vision and Light|PHB|2||heavily obscured}. The smoke dissipates at the start of the assassin's next turn."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"TC"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Trained from birth, these Quorum agents deal in death, rather than diplomacy. Whenever the Quorum has a problem that cannot be solved any other way, they dispatch one of these assassins, with strict instructions to escape custody if caught and slay those responsible for their capture. However, if attempting to fulfil this goal means certain death, they will flee, and live to serve the Quorum another day."
+								]
+							}
+						]
+					}
+				]
+			}
+		},
 		{
 			"name": "Tunneler",
 			"source": "TheWheel",
