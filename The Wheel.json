@@ -1,5 +1,4 @@
 {
-	"siteVersion": "1.218.3",
 	"_meta": {
 		"sources": [
 			{
@@ -11,18 +10,320 @@
 					"Autonomous Ace"
 				],
 				"color": "3d0785",
-				"colorNight": "b888f9",
-				"edition": "classic"
+				"colorNight": "b888f9"
 			}
-		],
-		"dateAdded": 1788349384,
-		"dateLastModified": 1788349384,
-		"edition": "classic"
+		]
 	},
 	"monster": [
 		{
+			"name": "Young Frost Tunneller",
+			"source": "TheWheel",
+			"referenceSources": [
+				"BGDIA",
+				"BMT",
+				"CM",
+				"CoA",
+				"CoS",
+				"EGW",
+				"HFStCM",
+				"IMR",
+				"KftGV",
+				"MOT",
+				"OoW",
+				"PotA",
+				"PSI",
+				"SatO",
+				"SKT",
+				"SLW",
+				"TftYP",
+				"WDH",
+				"WDMM"
+			],
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 14,
+			"int": 6,
+			"wis": 13,
+			"cha": 6,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"tremorsense 60 ft."
+			],
+			"passive": 13,
+			"immune": [],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The tunneler has advantage on an attack roll against a creature if at least one of the tunneller's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Tunneller",
+					"entries": [
+						"The tunneller can burrow through solid rock at half its burrowing speed and can leave a 5-foot-diameter tunnel in its wake"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 3 ({@damage 1d6}) cold damage."
+					]
+				},
+				{
+					"name": "Ice Breath {@recharge 6}",
+					"entries": [
+						"The tunneller exhales icy shards in a 15-foot cone. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 7 ({@damage 2d6}) piercing damage and 7 ({@damage 2d6}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"mountain",
+				"underdark"
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"While adults of the species can grow to gargantuan sizes, this juvenile is roughly the size of a horse. Its scaly hide is pale white, and sprouting from its back are several blue crystals of ice. Frost Tunnellers are lone creatures, and thus the juveniles are often found without parental supervision. Instead, they often take up the position of pack leader, lording over other, smaller creatures, using their tunnelling abilities to create an underground nest for themselves and their pack."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://www.superherotoystore.com/cdn/shop/articles/SHIMO_2000x.progressive.jpg?v=1710936762"
+						}
+					}
+				]
+			},
+			"resist": [
+				"cold"
+			],
+			"shortName": "tunneller",
+			"tokenHref": {
+				"type": "internal",
+				"path": ""
+			},
+			"damageTags": [
+				"C",
+				"P"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Tunneler",
+			"source": "TheWheel",
+			"page": 105,
+			"referenceSources": [
+				"QftIS"
+			],
+			"size": [
+				"S"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 36,
+				"formula": "8d6 + 8"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 20
+			},
+			"str": 14,
+			"dex": 13,
+			"con": 12,
+			"int": 3,
+			"wis": 12,
+			"cha": 6,
+			"save": {
+				"str": "+4",
+				"con": "+3"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"conditionImmune": [
+				"petrified"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Tunneler",
+					"entries": [
+						"The aurumvorax can burrow through solid rock and metal at half its burrowing speed and leaves a 5-foot-diameter tunnel in its wake."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The aurumvorax makes one Bite attack and two Claw attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. If the target is a creature wearing armor of any type, the aurumvorax regains 4 ({@dice 1d6 + 1}) hit points."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage. If the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 12}). Until this grapple ends, the aurumvorax can't use its Claw attack on another target, and when it moves, it can drag the {@condition grappled} creature with it, without the aurumvorax's speed being halved."
+					]
+				}
+			],
+			"traitTags": [
+				"Tunneler"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"hasFluff": true,
+			"token": {
+				"name": "Aurumvorax",
+				"source": "JttRC"
+			},
+			"fluff": {
+				"name": "Aurumvorax",
+				"source": "JttRC",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Early in life, aurumvoraxes cooperate with siblings and their den leader parents, digging tunnels in search of metal and other burrowing prey. As they grow to adulthood, aurumvoraxes hunt on their own, carving out territories they viciously defend."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Aurumvorax",
+								"entries": [
+									"An aurumvorax is an eight-legged, badger-like hunter. These aggressive omnivores attack any prey they think they can best, ambushing even creatures double their size. They supplement their diets with metal, whether it's worked or ore, and they have a particular taste for gold. This diet lends aurumvorax fur its golden sheen.",
+									"Alone or in small groups, aurumvoraxes dig deep in search of precious metals. Such exploration often leads them into conflict with subterranean settlements. As defenders of such communities often wear metal armor, aurumvoraxes prioritize attacking armored foes—whether that armor is metal or not."
+								]
+							}
+						]
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Mutated Spellcasting",
+					"headerEntries": [
+						"Due to the confluence of necromantic magic and exposure to the waters of an Emergence Pool, Tunneler has gained the ability to channel magic. His spellcasting modifier is Wisdom (spell save {@dc 11}) and he can innately cast the following spells, requiring no components:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell bane}",
+								"{@spell false life}"
+							],
+							"slots": 2,
+							"lower": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForcedSpell": [
+				"charisma"
+			]
+		},
+		{
 			"name": "Quorum Assassin",
-			"shortName": "Assassin",
 			"source": "TheWheel",
 			"size": [
 				"M"
@@ -140,17 +441,10 @@
 				"C",
 				"TC"
 			],
-			"damageTags": [
-				"I",
-				"P"
-			],
-			"damageTagsSpell": [
-				"N"
-			],
 			"miscTags": [
-				"AOE",
+				"MW",
 				"MLW",
-				"MW"
+				"AOE"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
@@ -168,195 +462,162 @@
 						]
 					}
 				]
-			}
+			},
+			"shortName": "Assassin",
+			"damageTagsSpell": [
+				"N"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			]
 		},
 		{
-			"name": "Tunneler",
-			"source": "TheWheel",
-			"page": 105,
-			"referenceSources": [
-				"QftIS"
-			],
+			"name": "Paint Globlin",
 			"size": [
 				"S"
 			],
-			"type": "monstrosity",
+			"type": "elemental",
+			"source": "TheWheel",
 			"alignment": [
-				"U"
+				"C",
+				"N"
 			],
 			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"natural armor"
-					]
-				}
+				11
 			],
 			"hp": {
-				"average": 36,
-				"formula": "8d6 + 8"
+				"formula": "4d8 + 12",
+				"average": 30
 			},
 			"speed": {
 				"walk": 30,
-				"burrow": 20
+				"climb": 15
 			},
-			"str": 14,
-			"dex": 13,
-			"con": 12,
-			"int": 3,
-			"wis": 12,
-			"cha": 6,
-			"save": {
-				"str": "+4",
-				"con": "+3"
-			},
-			"skill": {
-				"perception": "+3",
-				"stealth": "+3"
-			},
-			"senses": [
-				"darkvision 60 ft."
+			"str": 12,
+			"dex": 12,
+			"con": 16,
+			"int": 6,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "1",
+			"shortName": "Globlin",
+			"languages": [
+				"Aquan",
+				"Terran"
 			],
-			"passive": 13,
-			"conditionImmune": [
-				"petrified"
+			"languageTags": [
+				"AQ",
+				"T"
 			],
-			"cr": "2",
-			"spellcasting": [
+			"vulnerable": [
+				"acid",
+				"fire"
+			],
+			"resist": [
 				{
-					"name": "Mutated Spellcasting",
-					"type": "spellcasting",
-					"headerEntries": [
-						"Due to the confluence of necromantic magic and exposure to the waters of an Emergence Pool, Tunneler has gained the ability to channel magic. His spellcasting modifier is Wisdom (spell save {@dc 11}) and he can innately cast the following spells, requiring no components:"
+					"resist": [
+						"piercing",
+						"slashing"
 					],
-					"spells": {
-						"1": {
-							"spells": [
-								"{@spell bane}",
-								"{@spell false life}"
-							],
-							"slots": 2,
-							"lower": 1
-						}
-					},
-					"ability": "wis"
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
 				}
 			],
 			"trait": [
 				{
-					"name": "Tunneler",
+					"name": "Paint Form",
 					"entries": [
-						"The aurumvorax can burrow through solid rock and metal at half its burrowing speed and leaves a 5-foot-diameter tunnel in its wake."
+						"The globlin can move through a space as narrow as 1 inch wide without squeezing. It can also merge itself with any painted surface, becoming indistinguishable from the surface while it remains motionless."
+					]
+				},
+				{
+					"name": "Death Burst",
+					"entries": [
+						"When the globlin dies, it explodes in a burst of colourful paint. Each creature within 15 feet of it must then succeed on a {@dc 13} Dexterity saving throw or be {@condition blinded} until the end of its next turn. All paint globlins are immune to the death bursts of each other."
 					]
 				}
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"traitTags": [
+				"Death Burst"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "Glob Lob",
 					"entries": [
-						"The aurumvorax makes one Bite attack and two Claw attacks."
+						"The paint globlin throws a handful of paint at a creature it can see within 90 feet. That creature must succeed on a {@dc 13} Dexterity saving throw or be {@condition blinded} for one minute, or until it or another creature uses an action to clear the paint from its eyes."
 					]
 				},
 				{
-					"name": "Bite",
+					"name": "Clobber",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage. If the target is a creature wearing armor of any type, the aurumvorax regains 4 ({@dice 1d6 + 1}) hit points."
+						"{@atk mw} {@hit 3} to hit, reach 10 ft., one target. {@h}4 ({@damage 1d4 + 1}) bludgeoning damage."
 					]
 				},
 				{
-					"name": "Claw",
+					"name": "Paint Roller",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage. If the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 12}). Until this grapple ends, the aurumvorax can't use its Claw attack on another target, and when it moves, it can drag the {@condition grappled} creature with it, without the aurumvorax's speed being halved."
+						"The globlin moves up to its speed in a straight line without provoking opportunity attacks. If this movement takes the globlin through the space of a Medium or smaller creature, that creature must succeed on a {@dc 13} Dexterity saving throw or take {@damage 1d6 + 3} bludgeoning damage and fall {@condition prone}. The globlin cannot stop in another creature's space."
 					]
 				}
 			],
-			"token": {
-				"name": "Aurumvorax",
-				"source": "JttRC"
-			},
-			"traitTags": [
-				"Tunneler"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"grappled"
-			],
-			"savingThrowForcedSpell": [
-				"charisma"
-			],
-			"hasFluff": true,
 			"fluff": {
-				"name": "Aurumvorax",
-				"source": "JttRC",
 				"entries": [
 					{
 						"type": "entries",
 						"entries": [
-							"Early in life, aurumvoraxes cooperate with siblings and their den leader parents, digging tunnels in search of metal and other burrowing prey. As they grow to adulthood, aurumvoraxes hunt on their own, carving out territories they viciously defend."
-						]
-					},
-					{
-						"type": "section",
-						"entries": [
 							{
 								"type": "entries",
-								"name": "Aurumvorax",
 								"entries": [
-									"An aurumvorax is an eight-legged, badger-like hunter. These aggressive omnivores attack any prey they think they can best, ambushing even creatures double their size. They supplement their diets with metal, whether it's worked or ore, and they have a particular taste for gold. This diet lends aurumvorax fur its golden sheen.",
-									"Alone or in small groups, aurumvoraxes dig deep in search of precious metals. Such exploration often leads them into conflict with subterranean settlements. As defenders of such communities often wear metal armor, aurumvoraxes prioritize attacking armored foes—whether that armor is metal or not."
+									"Paint globlins are created when an elemental spirit of earth is summoned and tied to the minerals in paint. They will generally obey orders given by their summoner, especially if those orders involve causing mischief."
 								]
 							}
 						]
 					}
 				]
-			}
+			},
+			"damageTags": [
+				"B"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
 		},
 		{
-			"name": "Young Frost Tunneller",
-			"shortName": "tunneller",
+			"name": "Mummified Skullholder",
 			"source": "TheWheel",
 			"referenceSources": [
-				"BGDIA",
-				"BMT",
-				"CM",
-				"CoA",
-				"CoS",
-				"EGW",
-				"HFStCM",
-				"IMR",
-				"KftGV",
-				"MOT",
-				"OoW",
-				"PotA",
-				"PSI",
-				"SatO",
-				"SKT",
-				"SLW",
-				"TftYP",
+				"RtG",
+				"ToFW",
+				"VEoR",
 				"WDH",
 				"WDMM"
 			],
 			"size": [
-				"L"
+				"T"
 			],
-			"type": "monstrosity",
+			"type": "undead",
 			"alignment": [
-				"U"
+				"N",
+				"E"
 			],
 			"ac": [
 				{
@@ -367,88 +628,102 @@
 				}
 			],
 			"hp": {
-				"average": 45,
-				"formula": "7d8 + 14"
+				"formula": "18d4 + 36",
+				"average": 81
 			},
 			"speed": {
-				"walk": 30,
-				"burrow": 30
-			},
-			"str": 17,
-			"dex": 12,
-			"con": 14,
-			"int": 6,
-			"wis": 13,
-			"cha": 6,
-			"skill": {
-				"perception": "+3"
-			},
-			"senses": [
-				"tremorsense 60 ft."
-			],
-			"passive": 13,
-			"resist": [
-				"cold"
-			],
-			"immune": [],
-			"cr": "3",
-			"trait": [
-				{
-					"name": "Pack Tactics",
-					"entries": [
-						"The tunneler has advantage on an attack roll against a creature if at least one of the tunneller's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
-					]
+				"walk": 0,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
 				},
-				{
-					"name": "Tunneller",
-					"entries": [
-						"The tunneller can burrow through solid rock at half its burrowing speed and can leave a 5-foot-diameter tunnel in its wake"
-					]
-				}
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 10,
+			"con": 14,
+			"int": 11,
+			"wis": 14,
+			"cha": 18,
+			"senses": [
+				"darkvision 60 ft."
 			],
+			"passive": 12,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"paralyzed",
+				"poisoned",
+				"prone"
+			],
+			"cr": "5",
 			"action": [
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 3 ({@damage 1d6}) cold damage."
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) piercing damage."
 					]
 				},
 				{
-					"name": "Ice Breath {@recharge 6}",
+					"name": "Bandages",
 					"entries": [
-						"The tunneller exhales icy shards in a 15-foot cone. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 7 ({@damage 2d6}) piercing damage and 7 ({@damage 2d6}) cold damage on a failed save, or half as much damage on a successful one."
+						"The skullholder uses a random bandage effect, choosing a target that it can see within 40 feet of it.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "itemSub",
+									"name": "1. Dreadful Bandage",
+									"entry": "The targeted creature must succeed on a {@dc 15} Wisdom saving throw or be {@condition frightened} for 1 minute. If the target fails the saving throw by 5 or more, it is also {@condition paralyzed} while it is {@condition frightened} this way. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+								},
+								{
+									"type": "itemSub",
+									"name": "2. Corrupting Bandage",
+									"entry": "The target must succeed on a {@dc 15} Charisma saving throw, or it can't take reactions until the end of its next turn. On its turn, the target can't move, and it uses its action to make a melee or ranged attack against a randomly determined target within range. If the target can't attack, it does nothing on its turn."
+								},
+								{
+									"type": "itemSub",
+									"name": "3. Wrapping Bandage",
+									"entries": [
+										"If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or the skullholder moves it up to 30 feet in any direction. It is {@condition restrained} by the grip of the skullholder's bandages until the start of the skullholder's next turn or until the skullholder is {@condition incapacitated}.",
+										"If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The skullholder can also exert fine control on objects with this bandage effect, such as manipulating a simple tool or opening a door or a container."
+									]
+								},
+								{
+									"type": "itemSub",
+									"name": "4. Rotting Bandage",
+									"entries": [
+										"If the target is a creature, it must succeed on a {@dc 15} Constitution saving throw or take 36 ({@damage 8d8}) necrotic damage, and its hit point maximum decreases by half that amount. On a success, the creature takes half damage and its hit point maximum does not decrease.",
+										"If the target is a Large or smaller nonmagical object made of organic material such as wood, it rots away without a saving throw. If the target is a Huge or larger nonmagical object made of organic material, this bandage effect rots a 10-foot cube of it."
+									]
+								}
+							]
+						}
 					]
 				}
 			],
-			"environment": [
-				"arctic",
-				"mountain",
-				"underdark"
-			],
-			"tokenHref": {
-				"type": "internal",
-				"path": ""
-			},
 			"traitTags": [
-				"Keen Senses",
-				"Pack Tactics"
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Undead Fortitude"
 			],
 			"senseTags": [
-				"T"
-			],
-			"actionTags": [
-				"Breath Weapon"
-			],
-			"damageTags": [
-				"C",
-				"P"
+				"D"
 			],
 			"miscTags": [
-				"AOE",
-				"MW"
+				"MW",
+				"HPR",
+				"AOE"
 			],
-			"savingThrowForced": [
-				"dexterity"
+			"conditionInflict": [
+				"frightened",
+				"paralyzed",
+				"restrained"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
@@ -460,22 +735,91 @@
 							{
 								"type": "entries",
 								"entries": [
-									"While adults of the species can grow to gargantuan sizes, this juvenile is roughly the size of a horse. Its scaly hide is pale white, and sprouting from its back are several blue crystals of ice. Frost Tunnellers are lone creatures, and thus the juveniles are often found without parental supervision. Instead, they often take up the position of pack leader, lording over other, smaller creatures, using their tunnelling abilities to create an underground nest for themselves and their pack."
+									"Created as part of an experiment to perfect the mummified form, this creature is formed from a mummified head wrapped in bandages. These bandages float freely and, like a beholder's eye stalks, are able to create myriad effects.",
+									"All skullholders long to be freed from the laboratories they were created in, and will use whatever means at their disposal to convince any intruders to take them with them."
 								]
 							}
 						]
 					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://www.superherotoystore.com/cdn/shop/articles/SHIMO_2000x.progressive.jpg?v=1710936762"
-						}
-					}
 				]
-			}
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The skullholder has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Undead Nature",
+					"entries": [
+						"The skullholder doesn't require air, food, drink, or sleep."
+					]
+				},
+				{
+					"name": "Legendary Resistance (1/Day)",
+					"entries": [
+						"If the skullholder fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"save": {
+				"wis": "+5"
+			},
+			"skill": {
+				"deception": "+7"
+			},
+			"reaction": [
+				{
+					"name": "Bandage Absorption {@recharge 5}",
+					"entries": [
+						"As a reaction to taking damage, the skullholder can roll {@dice 4d6} and reduce the damage taken by that amount."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Bandages",
+					"entries": [
+						"The skullholder uses one random bandage effect."
+					]
+				}
+			],
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution",
+				"strength",
+				"wisdom"
+			]
 		}
 	]
 }
