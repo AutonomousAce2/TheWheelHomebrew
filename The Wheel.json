@@ -18,27 +18,6 @@
 		{
 			"name": "Young Frost Tunneller",
 			"source": "TheWheel",
-			"referenceSources": [
-				"BGDIA",
-				"BMT",
-				"CM",
-				"CoA",
-				"CoS",
-				"EGW",
-				"HFStCM",
-				"IMR",
-				"KftGV",
-				"MOT",
-				"OoW",
-				"PotA",
-				"PSI",
-				"SatO",
-				"SKT",
-				"SLW",
-				"TftYP",
-				"WDH",
-				"WDMM"
-			],
 			"size": [
 				"L"
 			],
@@ -169,10 +148,6 @@
 		{
 			"name": "Tunneler",
 			"source": "TheWheel",
-			"page": 105,
-			"referenceSources": [
-				"QftIS"
-			],
 			"size": [
 				"S"
 			],
@@ -604,13 +579,6 @@
 		{
 			"name": "Mummified Skullholder",
 			"source": "TheWheel",
-			"referenceSources": [
-				"RtG",
-				"ToFW",
-				"VEoR",
-				"WDH",
-				"WDMM"
-			],
 			"size": [
 				"T"
 			],
@@ -818,6 +786,316 @@
 				"charisma",
 				"constitution",
 				"strength",
+				"wisdom"
+			]
+		}		
+		{
+			"name": "Grave Shade",
+			"source": "TheWheel",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "3d8",
+				"average": 13
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 25,
+					"condition": "hover"
+				},
+				"canHover": true
+			},
+			"str": 6,
+			"dex": 19,
+			"con": 10,
+			"int": 10,
+			"wis": 7,
+			"cha": 1,
+			"skill": {
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, the shadow can take the {@action Hide} action as a bonus action. Its stealth bonus is also improved to +8."
+					]
+				},
+				{
+					"name": "Light Weakness",
+					"entries": [
+						"While in bright light, the shadow has disadvantage on attack rolls, ability checks, and saving throws."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The shadow (copy) can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shade Touch",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}9 ({@damage 1d8 + 4}) necrotic damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Incorporeal Movement"
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Grave Shades are undead created when a humanoid's life force is drained from them."
+								]
+							}
+						]
+					}
+				]
+			},
+			"save": {
+				"con": "+2"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"tokenHref": {
+				"type": "internal",
+				"path": ""
+			},
+			"damageTags": [
+				"N",
+				"O"
+			]
+		}
+		{
+			"name": "Undercover Undead",
+			"source": "TheWheel",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"warlock"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"wis": "+4"
+			},
+			"skill": {
+				"arcana": "+3",
+				"deception": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The undead casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 13}):"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell bane}",
+						"{@spell false life}",
+						"{@spell mage armor}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell fear}",
+							"{@spell hold person}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Ring of Life's Guise",
+					"entries": [
+						"While wearing this ring, the undead that is attuned to it appears as it did in life. This illusion is dispelled if the undead casts a spell that requires {@status concentration}."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"The undead doesn't require air, food, drink, or sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The undead makes two Life Drain or Grave Bolt attacks."
+					]
+				},
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d6 + 3}) necrotic damage. The target must succeed on a {@dc 13} Constitution saving throw. On a failure, the target takes an additional 5 ({@damage 1d4 + 3}) necrotic damage, and the undead regains hit points equal to half the total damage dealt. On a success, the target does not take the additional damage, and the undead does not regain hit points."
+					]
+				},
+				{
+					"name": "Grave Blast",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 120 ft., one target. {@h}9 ({@damage 1d10 + 3}) necrotic damage. The target must succeed on a {@dc 13} Constitution saving throw. On a failure, the target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. the target dies if its hit point maximum is reduced to 0. ",
+						"If this attack kills a Humanoid, a {@creature grave shade} immediately appears in the target's space."
+					]
+				}
+			],
+			"traitTags": [
+				"Sunlight Sensitivity",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RA",
+				"HPR"
+			],
+			"conditionInflictSpell": [
+				"frightened",
+				"paralyzed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Often used as undercover agents by the Cult of Sokar, these undead were once living, willing members of the cult who chose to become undead to further their master's cause. They gain magical abilities from their master, much as a Warlock might from their patron. They can be found all across the Wheel, disguised as simple travellers, adventurers, or even important members of a community."
+						]
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "internal",
+				"path": ""
+			},
+			"damageTags": [
+				"N"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
 				"wisdom"
 			]
 		}
