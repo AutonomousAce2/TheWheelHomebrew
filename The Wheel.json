@@ -1098,6 +1098,287 @@
 				"charisma",
 				"wisdom"
 			]
+		},
+		{
+			"name": "Living Thunderwave",
+			"source": "TheWheel",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 15,
+				"formula": "2d8 + 6"
+			},
+			"speed": {
+				"walk": 25,
+				"fly": 25
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 16,
+			"int": 3,
+			"wis": 6,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"thunder"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"poisoned",
+				"prone"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The living spell can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The living spell has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Magical Strike",
+					"entries": [
+						"{@atk ms} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) thunder damage."
+					]
+				},
+				{
+					"name": "Spell Mimicry {@recharge 5}",
+					"entries": [
+						"A wave of thunderous force sweeps out from the living spell. Each creature in a 15-foot cube originating from the living spell must make a Constitution saving throw. On a failed save, a creature takes {@damage 2d8} thunder damage and is pushed 10 feet away from the living spell. On a successful save, the creature takes half as much damage and isn't pushed.",
+						"In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from the living spell by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MA",
+				"AOE"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Constructed Nature",
+														"entries": [
+															"A living spell doesn't require air, food, drink, or sleep."
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "internal",
+				"path": ""
+			},
+			"damageTags": [
+				"T"
+			]
+		},
+		{
+			"name": "Living Wall of Sand",
+			"source": "TheWheel",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 15,
+				"formula": "2d8 + 6"
+			},
+			"speed": {
+				"walk": 25,
+				"fly": 25
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 16,
+			"int": 3,
+			"wis": 6,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"poisoned",
+				"prone"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The living spell can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The living spell has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Magical Strike",
+					"entries": [
+						"{@atk ms} {@hit 5} to hit, reach 5 ft., one target. On a hit, the target is {@condition blinded} until the start of its next turn."
+					]
+				},
+				{
+					"name": "Spell Mimicry {@recharge 5}",
+					"entries": [
+						"The living spell creates a wall of swirling sand on the ground at a point you can see within range. The living spell can make the wall up to 30 feet long, 10 feet high, and 10 feet thick, and it vanishes after a minute. It blocks line of sight but not movement. A creature is {@condition blinded} while in the wall's space and must spend 3 feet of movement for every 1 foot it moves there."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Constructed Nature",
+														"entries": [
+															"A living spell doesn't require air, food, drink, or sleep."
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "internal",
+				"path": ""
+			},
+			"conditionInflict": [
+				"blinded"
+			]
 		}
+		
 	]
 }
