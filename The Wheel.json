@@ -659,7 +659,7 @@
 									"name": "3. Wrapping Bandage",
 									"entries": [
 										"If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or the skullholder moves it up to 30 feet in any direction. It is {@condition restrained} by the grip of the skullholder's bandages until the start of the skullholder's next turn or until the skullholder is {@condition incapacitated}.",
-										"If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction, so long as it does not move the creature more than 40 feet from the skullholder. The skullholder can also exert fine control on objects with this bandage effect, such as manipulating a simple tool or opening a door or a container."
+										"If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The skullholder can also exert fine control on objects with this bandage effect, such as manipulating a simple tool or opening a door or a container."
 									]
 								},
 								{
