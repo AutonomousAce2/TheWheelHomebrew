@@ -93,13 +93,6 @@
 			],
 			"entries": [
 				{
-					"name": "Creature Type",
-					"type": "entries",
-					"entries": [
-						"You are a fey."
-					]
-				},
-				{
 					"name": "Darkvision",
 					"type": "entries",
 					"entries": [
