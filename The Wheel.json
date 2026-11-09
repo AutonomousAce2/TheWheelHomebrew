@@ -14,6 +14,139 @@
 			}
 		]
 	},
+	"race": [
+		{
+			"name": "Muroid",
+			"source": "TheWheel",
+			"lineage": "VRGR",
+			"size": [
+				"S"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"age": {
+				"max": 60
+			},
+			"traitTags": [
+				"Darkvision",
+				"Natural Weapon",
+				"Skill Proficiency"
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"deception",
+							"perception",
+							"sleight of hand",
+							"stealth"
+						],
+						"count": 2
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"any": 1
+				}
+			],
+			"entries": [
+				{
+					"name": "Creature Type",
+					"type": "entries",
+					"entries": [
+						"You are a fey."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"type": "entries",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"name": "Pestilent Nature",
+					"type": "entries",
+					"entries": [
+						"You have advantage on saving throws against poison, and you have resistance against poison damage. Additionally, you are immune to the effects of any disease - although you can still contract and transmit them."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Plaguebearer Bite",
+					"entries": [
+						"You can use your teeth to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike. In addition, any creature hit by your bite has disadvantage on the next saving throw they make to resist poison or disease before the end of your next turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Conniving",
+					"entries": [
+						"You are proficient in two of the following skills: Deception, Perception, Stealth, or Sleight of Hand."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					]
+				}
+			],
+			"hasFluff": true
+		}
+	],
+	"raceFluff": [
+		{
+			"name": "Muroid",
+			"source": "TheWheel",
+			"entries": [
+				"Muroids - also known as Ratfolk or occasionally Ta'ari - are a rat-like species of humanoids. They often find their homes in the larger cities of the Wheel, such as the Heart or the Kirks of Halstrad. Murioids tend towards curiosity in any form, whether that be about magic or mundane matters. It is said that the first Assessment Party was created at the behest of a Muroid sage who claimed the idea came to her in a vision sent by Theela, the goddess of change, learning, and night. Muroids most often Emerge in Halstrad and the Dense Woodlands."
+			]
+		}
+	],
 	"monster": [
 		{
 			"name": "Young Frost Tunneller",
